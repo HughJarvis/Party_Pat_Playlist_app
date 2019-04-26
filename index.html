@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reading List App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+
+    <div class="header">
+          <img src="images/partypat.png" alt="Picture of Party Pat chilling">
+          <h1>Hey!</h1>
+          <p>I'm Party Pat. You might know me from the Cartoon Network hit Adventure Time. I won't bore you with the details but to survive, my tribe of party bears need a playlist of stone cold classics long enough that we can dance all night every night.</p>
+          <p>Please enter your track below:</p>
+        </div>
+
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="title" class="primary">Song Title</label>
+          <input type="text" id="title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="artist" class="primary">Artist</label>
+          <input type="text" id="artist" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="rating" class="primary">Rating</label>
+          <select id="rating">
+            <option value="" disabled selected></option>
+            <option value="Brilliant">Brilliant</option>
+            <option value="Bloody Brilliant">Bloody Brilliant</option>
+            <option value="Absolutely Bloody Brilliant">Absolutely Bloody Brilliant</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Reading List</h1>
+    <div id="reading-list"></div>
+  </body>
+</html>

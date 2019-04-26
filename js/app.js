@@ -1,41 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const newItemform = document.querySelector('#new-item-form');
-  newItemform.addEventListener('submit', handleNewItemFormSubmit);
+  const newSongform = document.querySelector('#new-song-form');
+  newSongform.addEventListener('submit', handleNewSongFormSubmit);
 
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
-const handleNewItemFormSubmit = function (event) {
+const handleNewSongFormSubmit = function (event) {
   event.preventDefault();
 
-  const readingListItem = createReadingListItem(event.target);
-  const readingList = document.querySelector('#reading-list');
-  readingList.appendChild(readingListItem);
+  const song = createSong(event.target);
+  const playlist = document.querySelector('#playlist');
+  playlist.appendChild(song);
 
   event.target.reset();
 }
 
-const createReadingListItem = function (form) {
-  const readingListItem = document.createElement('li');
-  readingListItem.classList.add('reading-list-item');
+const createSong = function (form) {
+  const song = document.createElement('li');
+  song.classList.add('reading-list-item');
 
   const title = document.createElement('h2');
-  title.textContent = form.title.value;
-  readingListItem.appendChild(title);
+  title.textContent = `Title: ${form.title.value}`;
+  song.appendChild(title);
 
-  const artist = document.createElement('h3');
-  artist.textContent = form.artist.value;
-  readingListItem.appendChild(artist);
+  const artist = document.createElement('h4');
+  artist.textContent = `Artist: ${form.artist.value}`;
+  song.appendChild(artist);
 
-  const rating = document.createElement('p');
-  rating.textContent = form.rating.value;
-  readingListItem.appendChild(rating);
+  const rating = document.createElement('h4');
+  rating.textContent = `Rating: ${form.rating.value}`;
+  song.appendChild(rating);
 
-  return readingListItem;
+  return song;
 }
 
 const handleDeleteAllClick = function (event) {
-  const readingList = document.querySelector('#reading-list');
-  readingList.innerHTML = '';
+  const playlist = document.querySelector('#playlist');
+  playlist.innerHTML = '';
 }

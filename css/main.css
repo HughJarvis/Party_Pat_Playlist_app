@@ -12,6 +12,10 @@ body {
   margin-right: 1.8rem;
 }
 
+.dance-selector
+  
+
+
 label.primary {
   display: block;
   margin: 0.4em 0;
@@ -25,7 +29,7 @@ button, input[type="submit"] {
   margin-top: 1rem;
 }
 
-#reading-list {
+#playlist {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;

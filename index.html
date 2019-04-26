@@ -15,7 +15,7 @@
           <p>Please enter your track below:</p>
         </div>
 
-    <form id="new-item-form">
+    <form id="new-song-form">
       <div id="form-wrapper">
         <div class="form-item">
           <label for="title" class="primary">Song Title</label>
@@ -36,13 +36,38 @@
             <option value="Absolutely Bloody Brilliant">Absolutely Bloody Brilliant</option>
           </select>
         </div>
+
+        <div class="dance-selector">
+          <fieldset>
+            <legend>Please recommend a dance from the approved list:</legend>
+
+            <input type="radio" id="mashed-potato" name="dance">
+            <label for="mashed-potato">The Mashed Potato</label><br/>
+
+            <input type="radio" id="twist" name="dance">
+            <label for="twist">The Twist</label><br/>
+
+            <input type="radio" id="electric-boogaloo" name="dance">
+            <label for="electric-boogaloo">The Electric Boogaloo</label>
+
+            <input type="radio" id="lambada" name="dance">
+            <label for="lambada">The Lambada</label>
+
+            <input type="radio" id="electric-boogaloo" name="dance">
+            <label for="electric-boogaloo">Hands in the air like you just don't care</label>
+
+            <input type="radio" id="office party shuffle" name="dance">
+            <label for="office party shuffle">Office Party Shuffle</label>
+          </fieldset>
+        </div>
+
       </div>
       <input type="submit" value="save"/>
     </form>
 
     <button id="delete-all">Delete All</button>
 
-    <h1>Reading List</h1>
-    <div id="reading-list"></div>
+    <h1>Playist</h1>
+    <div id="playlist"></div>
   </body>
 </html>

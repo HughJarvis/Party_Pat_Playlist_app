@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
+  // const greetingButton = document.querySelector('#greeting-button')
+  // greetingButton.addEventListener('click', handleGreetingButton)
 })
 
 const handleNewSongFormSubmit = function (event) {
@@ -32,6 +35,10 @@ const createSong = function (form) {
   rating.textContent = `Rating: ${form.rating.value}`;
   song.appendChild(rating);
 
+  const dance = document.createElement('h4');
+  dance.textContent = `Dance: ${form.dance.value}`;
+  song.appendChild(dance);
+  console.log('dance is:', dance);
   return song;
 }
 

@@ -2,16 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Reading List App</title>
+    <title>Party Pat's party playlist</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="js/app.js"></script>
   </head>
   <body>
+    <div class="wrapper">
+
+
 
     <div class="header">
-          <img src="images/partypat.png" alt="Picture of Party Pat chilling">
+          <img src="/images/partypat.png" alt="Picture of Party Pat chilling">
           <h1>Hey!</h1>
-          <p>I'm Party Pat. You might know me from the Cartoon Network hit Adventure Time. I won't bore you with the details but to survive, my tribe of party bears need a playlist of stone cold classics long enough that we can dance all night every night.</p>
+          <p>I'm Party Pat. You might know me from the Cartoon Network hit Adventure Time. I won't bore you with the details but to survive, my tribe of party bears need a playlist of stone cold bangerz long enough that we can dance all night every night till the breaka breaka dawn.</p>
           <p>Please enter your track below:</p>
         </div>
 
@@ -39,25 +42,25 @@
 
         <div class="dance-selector">
           <fieldset>
-            <legend>Please recommend a dance from the approved list:</legend>
+            <legend>Recommend a dance from the approved list:</legend>
 
-            <input type="radio" id="mashed-potato" name="dance">
-            <label for="mashed-potato">The Mashed Potato</label><br/>
+            <input type="radio" id="twist" name="dance" value="Twist">
+            <label for="twist">Twist</label><br/>
 
-            <input type="radio" id="twist" name="dance">
-            <label for="twist">The Twist</label><br/>
+            <input type="radio" id="mashed-potato" name="dance" value="Mashed Potato">
+            <label for="mashed-potato">Mashed Potato</label><br/>
 
-            <input type="radio" id="electric-boogaloo" name="dance">
-            <label for="electric-boogaloo">The Electric Boogaloo</label>
+            <input type="radio" id="electric-boogaloo" name="dance" value="Electric Boogaloo">
+            <label for="electric-boogaloo">Electric Boogaloo</label>
 
-            <input type="radio" id="lambada" name="dance">
-            <label for="lambada">The Lambada</label>
+            <input type="radio" id="lambada" name="dance" value="Lambada">
+            <label for="lambada">Lambada</label>
 
-            <input type="radio" id="electric-boogaloo" name="dance">
-            <label for="electric-boogaloo">Hands in the air like you just don't care</label>
+            <input type="radio" id="foot-stomp" name="dance" value="Foot Stomp">
+            <label for="foot-stomp">Foot Stomp</label>
 
-            <input type="radio" id="office party shuffle" name="dance">
-            <label for="office party shuffle">Office Party Shuffle</label>
+            <input type="radio" id="office-party-shuffle" name="dance" value="Office Party Shuffle">
+            <label for="office-party-shuffle">Office Party Shuffle</label>
           </fieldset>
         </div>
 
@@ -67,7 +70,8 @@
 
     <button id="delete-all">Delete All</button>
 
-    <h1>Playist</h1>
+    <h1>Playlist</h1>
     <div id="playlist"></div>
+    </div>
   </body>
 </html>

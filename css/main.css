@@ -12,8 +12,10 @@ body {
   margin-right: 1.8rem;
 }
 
-.dance-selector
-  
+.dance-selector {
+
+}
+
 
 
 label.primary {
@@ -38,7 +40,6 @@ button, input[type="submit"] {
 .reading-list-item {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
-  border: 1px solid #20437c;
-  border-radius: 5%;
-  background: #ddeaff;
+  border: 4px solid;
+  background: #blue;
 }

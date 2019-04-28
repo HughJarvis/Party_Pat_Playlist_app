@@ -18,10 +18,10 @@ if (clickCount == 1) {
   speech.textContent = "Thanks! I'm Party Pat from TV's Adventure Time. I have like a really bad problem you can solve. Wanna know how? Click that button again."
 } else {
   if (clickCount == 2) {
-    speech.textContent = "I'll tell it straight. To survive, my tribe of party bears need a playlist of stone cold bangerz so we can dance all night, every night. Click that button again, go on."
+    speech.textContent = "I'll tell it straight. To survive, my tribe of party bears need a playlist of certified stone cold bangers so we can dance all night, every night. Click that button again, go on."
   } else {
     if (clickCount == 3) {
-      speech.textContent = "...so I need you to recommend loads of pumping floor fillas I can play my people. I've set up a form below - just fill it in as many times as you like. Yours, Pat."
+      speech.textContent = "...so I need you to recommend a bunch of pumping floor fillas I can play my people. I've set up a form below - just fill it in as many times as you like. Yours always, Pat. Now scroll down."
     }
   }
 }

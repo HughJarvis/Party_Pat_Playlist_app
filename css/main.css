@@ -51,7 +51,7 @@ button {
   border: solid 2px white;
   border-radius: 5px;
   padding: 15px 30px;
-  margin: 5px;
+  margin: 0px 5px 10px 10px;
   font-family: 'Bangers', cursive;
   font-size: 18px;
   color: white;
@@ -61,6 +61,11 @@ button:hover {
   background-color: yellow;
   border: solid 2px black;
   color: black;
+}
+
+
+input.primary {
+  height: 10px
 }
 
 
@@ -101,6 +106,9 @@ h1 {
   font-size: 35px;
   margin-left: 10px;
 }
+
+
+
 
 #new-song-form {
   background-color: #41f4c7;
@@ -145,8 +153,13 @@ h1 {
 
 }
 
-.fieldset {
+fieldset {
   border-radius: 3px;
+  margin-top: 20px;
+}
+
+fieldset p {
+  font-size: 10px;
 }
 
 legend {
@@ -155,7 +168,7 @@ legend {
 
 label.primary {
   display: block;
-  margin: 0.4em 0;
+  /* margin:  ; */
 }
 
 /* label::after {
@@ -172,18 +185,25 @@ label.primary {
 }
 
 
-#playlist {
+/* #playlist {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   border: solid 2px white;
   border-radius: 5px;
-}
+} */
+
 .playlist-song {
-  background-color: #41f4c7;
+  background-color: #C7F6F5;
   border: solid 2px white;
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 5px 5px 5px;
   margin 5px;
+  padding: 10px;
 
+}
+p.playlist-song {
+  font-size: 12px;
+  border: transparent;
+  margin: 0 0 0 0;
 }

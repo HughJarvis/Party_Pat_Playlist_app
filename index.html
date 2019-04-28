@@ -8,101 +8,99 @@
     <script src="js/app.js"></script>
   </head>
   <body>
+    <div class="wrapper">
 
-    <div class="header">
-      <h1>Party Pat's 24hr party playlist</h1>
-    </div>
+      <div class="header">
+        <h1>Party Pat's 24hr party playlist</h1>
+      </div>
 
-    <div class="image-container">
-      <img src="public/images/partypat.png" alt="Picture of Party Pat chilling">
-      <button id="greeting-button" data-clickcount="0">That button</button>
-      <div class="pat-chat">
-        <div class="speech bubble">
-          <p>Hey! Do me a solid and click that button there by my left elbow, will you?</p>
+      <div class="image-container">
+        <img src="public/images/partypat.png" alt="Picture of Party Pat chilling">
+        <button id="greeting-button" data-clickcount="0">That button</button>
+        <div class="pat-chat">
+          <div class="speech bubble">
+            <p>Hey! Do me a solid and click that button there by my left elbow, will you?</p>
+          </div>
         </div>
       </div>
-    </div>
 
+      <form id="new-song-form">
+          <div class="form-item">
+            <label for="new-song-form"><h2>Enter your track details below:</h2></label>
+          </div>
 
+          <div class="form-item">
+            <label for="title" class="primary">Song Title</label>
+            <input type="text" id="title" required/>
+          </div>
 
+          <div class="form-item">
+            <label for="artist" class="primary">Artist</label>
+            <input type="text" id="artist" required/>
+          </div>
 
+          <div class="form-item">
+            <label for="rating" class="primary">Rating</label>
+            <select id="rating">
+              <option value="" disabled selected>How good is your song?</option>
+              <option value="Brilliant">Brilliant</option>
+              <option value="Bloody Brilliant">Bloody Brilliant</option>
+              <option value="Absolutely Bloody Brilliant">Absolutely Bloody Brilliant</option>
+            </select>
+          </div>
 
-    <form id="new-song-form">
-        <div class="form-item">
-          <label for="new-song-form"><h2>Enter your track details below:</h2></label>
-        </div>
-
-        <div class="form-item">
-          <label for="title" class="primary">Song Title</label>
-          <input type="text" id="title" required/>
-        </div>
-
-        <div class="form-item">
-          <label for="artist" class="primary">Artist</label>
-          <input type="text" id="artist" required/>
-        </div>
-
-        <div class="form-item">
-          <label for="rating" class="primary">Rating</label>
-          <select id="rating">
-            <option value="" disabled selected>How good is your song?</option>
-            <option value="Brilliant">Brilliant</option>
-            <option value="Bloody Brilliant">Bloody Brilliant</option>
-            <option value="Absolutely Bloody Brilliant">Absolutely Bloody Brilliant</option>
-          </select>
-        </div>
-
-        <div class="dance-selector">
-          <fieldset>
-            <legend>Now recommend a dance from the approved list:</legend>
-            <div class="form-item">
-              <input type="radio" id="twist" name="dance" value="Twist">
-              <label for="twist">Twist</label><br/>
-            </div>
-
-            <div class="form-item">
-              <input type="radio" id="mashed-potato" name="dance" value="Mashed Potato">
-              <label for="mashed-potato">Mashed Potato</label><br/>
+          <div class="dance-selector">
+            <fieldset>
+              <legend>Now recommend a dance from the approved list:</legend>
+              <div class="form-item">
+                <input type="radio" id="twist" name="dance" value="Twist">
+                <label for="twist">Twist</label><br/>
               </div>
 
-            <div class="form-item">
-              <input type="radio" id="electric-boogaloo" name="dance" value="Electric Boogaloo">
-              <label for="electric-boogaloo">Electric Boogaloo</label>
-            </div>
+              <div class="form-item">
+                <input type="radio" id="mashed-potato" name="dance" value="Mashed Potato">
+                <label for="mashed-potato">Mashed Potato</label><br/>
+                </div>
 
-            <div class="form-item">
-              <input type="radio" id="lambada" name="dance" value="Lambada">
-              <label for="lambada">Lambada*</label>
-            </div>
+              <div class="form-item">
+                <input type="radio" id="electric-boogaloo" name="dance" value="Electric Boogaloo">
+                <label for="electric-boogaloo">Electric Boogaloo</label>
+              </div>
 
-            <div class="form-item">
-              <input type="radio" id="foot-stomp" name="dance" value="Foot Stomp">
-              <label for="foot-stomp">Foot Stomp</label>
-            </div>
+              <div class="form-item">
+                <input type="radio" id="lambada" name="dance" value="Lambada">
+                <label for="lambada">Lambada*</label>
+              </div>
 
-            <div class="form-item">
-              <input type="radio" id="office-party-shuffle" name="dance" value="Office Party Shuffle">
-              <label for="office-party-shuffle">Office Party Shuffle</label>
-            </div>
-            <p class="fieldset">* The forbidden dance</p>
-          </fieldset>
-        </div>
+              <div class="form-item">
+                <input type="radio" id="foot-stomp" name="dance" value="Foot Stomp">
+                <label for="foot-stomp">Foot Stomp</label>
+              </div>
 
-
-      <input class="submit" type="submit" value="save"/>
-    </form>
-
-
-    <div class="playlist-wrapper">
-      <h1>Playlist</h1>
-        <ol id="playlist">
-        </ol>
-      <button id="delete-all" >Delete All</button>
-    </div>
+              <div class="form-item">
+                <input type="radio" id="office-party-shuffle" name="dance" value="Office Party Shuffle">
+                <label for="office-party-shuffle">Office Party Shuffle</label>
+              </div>
+              <p class="fieldset">* The forbidden dance</p>
+            </fieldset>
+          </div>
 
 
-    <div class="footer">
-      <p>Hugh Jarvis, 2019. How's my app design?</p>
+        <input class="submit" type="submit" value="save"/>
+      </form>
+
+
+      <div class="playlist-wrapper">
+        <h1>Playlist</h1>
+          <ol id="playlist">
+          </ol>
+        <button id="delete-all" >Delete All</button>
+      </div>
+
+
+      <div class="footer">
+        <p>Hugh Jarvis, 2019. How's my app design?</p>
+      </div>
     </div>
   </body>
 </html>

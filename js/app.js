@@ -5,9 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
-  // const greetingButton = document.querySelector('#greeting-button')
-  // greetingButton.addEventListener('click', handleGreetingButton)
+  const greetingButton = document.querySelector('#greeting-button')
+  greetingButton.addEventListener('click', handleGreetingButton)
 })
+
+const handleGreetingButton = function (event) {
+  const speech = document.querySelector('p')
+console.log('speech', speech);
+  speech.textContent = "Thanks! I'm Party Pat from TV's Adventure Time. To survive, my tribe of party bears need a playlist of stone cold bangerz long enough that we can dance all night, every night till the breaka breaka dawn."
+
+}
+
+
+
 
 const handleNewSongFormSubmit = function (event) {
   event.preventDefault();
@@ -21,7 +31,7 @@ const handleNewSongFormSubmit = function (event) {
 
 const createSong = function (form) {
   const song = document.createElement('li');
-  song.classList.add('reading-list-item');
+  song.classList.add('playlist-song');
 
   const title = document.createElement('h2');
   title.textContent = `Title: ${form.title.value}`;

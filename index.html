@@ -2,24 +2,36 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Party Pat's party playlist</title>
+    <title>Party Pat's 24hr party playlist</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Montserrat:900" rel="stylesheet">
     <script src="js/app.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-
-
 
     <div class="header">
-          <img src="/images/partypat.png" alt="Picture of Party Pat chilling">
-          <h1>Hey!</h1>
-          <p>I'm Party Pat. You might know me from the Cartoon Network hit Adventure Time. I won't bore you with the details but to survive, my tribe of party bears need a playlist of stone cold bangerz long enough that we can dance all night every night till the breaka breaka dawn.</p>
-          <p>Please enter your track below:</p>
+      <h1>Party Pat's 24hr party playlist</h1>
+    </div>
+
+    <div class="image-container">
+      <img src="public/images/partypat.png" alt="Picture of Party Pat chilling">
+      <button id="greeting-button" >That button</button>
+      <div class="pat-chat">
+        <div class="speech bubble">
+          <p>Hey! Do me a solid and click that button there by my left elbow, will you?</p>
         </div>
+      </div>
+    </div>
+
+
+
+
 
     <form id="new-song-form">
-      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="new-song-form"><h2>Enter your track details below:</h2></label>
+        </div>
+
         <div class="form-item">
           <label for="title" class="primary">Song Title</label>
           <input type="text" id="title" required/>
@@ -33,7 +45,7 @@
         <div class="form-item">
           <label for="rating" class="primary">Rating</label>
           <select id="rating">
-            <option value="" disabled selected></option>
+            <option value="" disabled selected>How good is your song?</option>
             <option value="Brilliant">Brilliant</option>
             <option value="Bloody Brilliant">Bloody Brilliant</option>
             <option value="Absolutely Bloody Brilliant">Absolutely Bloody Brilliant</option>
@@ -43,35 +55,57 @@
         <div class="dance-selector">
           <fieldset>
             <legend>Recommend a dance from the approved list:</legend>
+            <div class="form-item">
+              <input type="radio" id="twist" name="dance" value="Twist">
+              <label for="twist">Twist</label><br/>
+            </div>
 
-            <input type="radio" id="twist" name="dance" value="Twist">
-            <label for="twist">Twist</label><br/>
+            <div class="form-item">
+              <input type="radio" id="mashed-potato" name="dance" value="Mashed Potato">
+              <label for="mashed-potato">Mashed Potato</label><br/>
+              </div>
 
-            <input type="radio" id="mashed-potato" name="dance" value="Mashed Potato">
-            <label for="mashed-potato">Mashed Potato</label><br/>
+            <div class="form-item">
+              <input type="radio" id="electric-boogaloo" name="dance" value="Electric Boogaloo">
+              <label for="electric-boogaloo">Electric Boogaloo</label>
+            </div>
 
-            <input type="radio" id="electric-boogaloo" name="dance" value="Electric Boogaloo">
-            <label for="electric-boogaloo">Electric Boogaloo</label>
+            <div class="form-item">
+              <input type="radio" id="lambada" name="dance" value="Lambada">
+              <label for="lambada">Lambada</label>
+            </div>
 
-            <input type="radio" id="lambada" name="dance" value="Lambada">
-            <label for="lambada">Lambada</label>
+            <div class="form-item">
+              <input type="radio" id="foot-stomp" name="dance" value="Foot Stomp">
+              <label for="foot-stomp">Foot Stomp</label>
+            </div>
 
-            <input type="radio" id="foot-stomp" name="dance" value="Foot Stomp">
-            <label for="foot-stomp">Foot Stomp</label>
+            <div class="form-item">
+              <input type="radio" id="office-party-shuffle" name="dance" value="Office Party Shuffle">
+              <label for="office-party-shuffle">Office Party Shuffle</label>
+            </div>
 
-            <input type="radio" id="office-party-shuffle" name="dance" value="Office Party Shuffle">
-            <label for="office-party-shuffle">Office Party Shuffle</label>
           </fieldset>
         </div>
 
-      </div>
-      <input type="submit" value="save"/>
+
+      <input class="submit" type="submit" value="save"/>
     </form>
 
-    <button id="delete-all">Delete All</button>
 
-    <h1>Playlist</h1>
-    <div id="playlist"></div>
+    <div class="playlist-wrapper">
+      <h1>Playlist</h1>
+
+
+      <div id="playlist" class="playlist"></div>
+      
+
+      <button id="delete-all" >Delete All</button>
+    </div>
+
+
+    <div class="footer">
+      <p>Hugh Jarvis, 2019</p>
     </div>
   </body>
 </html>

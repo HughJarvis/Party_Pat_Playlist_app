@@ -33,13 +33,13 @@ const handleNewSongFormSubmit = function (event) {
   const playlist = document.querySelector('#playlist');
   const song = document.createElement("li")
   song.classList.add('playlist-song');
-  song.textContent = `${event.target.title.value} by ${event.target.artist.value} (rated: ${event.target.rating.value})`;
+  song.textContent = `${event.target.title.value} by ${event.target.artist.value}`;
   playlist.appendChild(song);
 
-  const dance = document.createElement('p');
-      dance.textContent = `Recommended dance: The ${event.target.dance.value}`;
-      dance.classList.add('playlist-song');
-      song.appendChild(dance);
+  const danceAndRating = document.createElement('p');
+      danceAndRating.textContent = `(Rated: ${event.target.rating.value}, Recommended dance: The ${event.target.dance.value})`;
+      danceAndRating.classList.add('playlist-song');
+      song.appendChild(danceAndRating);
 
       event.target.reset();
 

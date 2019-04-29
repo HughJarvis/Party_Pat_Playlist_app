@@ -12,6 +12,7 @@ body {
 .header {
   border-bottom: 2px solid black;
   margin-bottom: 0px;
+  width: 620px;
 }
 
 .pat-chat {
@@ -95,7 +96,7 @@ input[type="submit"]:hover {
 
 
 h1 {
-  font-size: 38px;
+  font-size: 37px;
   margin-left: 10px;
 }
 
@@ -149,6 +150,11 @@ fieldset p {
   font-size: 10px;
 }
 
+
+p.footer {
+  font-size: 12px;
+}
+
 legend {
   font-size: 18px;
 }
@@ -183,4 +189,5 @@ p.playlist-song {
   font-size: 12px;
   border: transparent;
   margin: 0 0 0 0;
+  padding: 0;
 }

@@ -95,11 +95,13 @@ input[type="submit"]:hover {
 
 
 h1 {
-  font-size: 35px;
+  font-size: 38px;
   margin-left: 10px;
 }
 
-
+h1.playlist {
+  font-size: 30px
+}
 
 
 #new-song-form {
@@ -161,9 +163,11 @@ label.primary {
 .playlist-wrapper {
   background-color: #41f4c7;
   max-width: 600px;
+  max-height: 500px;
   border: solid 2px white;
   border-radius: 5px;
   margin: 10px;
+  overflow-y: scroll;
 }
 
 
@@ -171,8 +175,7 @@ label.primary {
   background-color: #C7F6F5;
   border: solid 2px white;
   border-radius: 5px;
-  margin: 10px 5px 5px 5px;
-  margin 5px;
+  margin: 10px 40px 5px 5px;
   padding: 10px;
 
 }

@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
-  const greetingButton = document.querySelector('#greeting-button')
-  greetingButton.addEventListener('click', handleGreetingButton)
+  const greetingButton = document.querySelector('#greeting-button');
+  greetingButton.addEventListener('click', handleGreetingButton);
 })
 
 
@@ -45,6 +45,8 @@ const handleNewSongFormSubmit = function (event) {
 
   const speech = document.querySelector('p');
   speech.textContent = "Thank you so much! You have excellent taste."
+
+
 }
 
 
